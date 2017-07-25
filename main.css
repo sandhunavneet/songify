@@ -1,0 +1,291 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+
+h1 {
+    border: 0;
+    margin: 0;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+   }
+
+.welcome-screen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+font-size:30px;
+
+background:url("screen.jpeg");
+background-size:cover;
+color:black;
+}
+
+#name-input{
+    padding: 5px 30px 5px 30px;
+    text-align:left;
+    font-size:20px;
+    background-color:rgba(0,0,0,0.5);
+    /*border-radius:10%;*/
+   
+}
+.button{
+    padding:10px 30px 6px 30px;
+    font-size:15px;
+    background-color:pink;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /*background-color: #1f1f1f;*/
+    background:url("https://media4.giphy.com/media/arksQMZXW0nK0/200w.webp#10-grid1.gif");
+
+background-size:cover;
+}
+.main header {
+    height: 80px;
+background-color: #282828;
+    background:url("");
+    color: #FFF;
+}
+
+.main .content {
+    flex:1;
+    background-color: #1f1f1f;
+
+}
+
+.main footer {
+    height: 80px;
+    background-color: #282828;
+    padding-top: 1rem;
+}
+
+.player-buttons {
+    display:flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.right.floated {
+    float: right;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.progress-wrapper {
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-wrapper span {
+    color: #959595;
+}
+
+.player-progress {
+    height: 8px;
+    width: 700px;
+    background-color:#3d3d3d;
+    /*background-color:white;*/
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.progress-filled {
+    background-color: #959595;
+    height: 8px;
+    border-radius: 4px;
+    width: 0;
+
+}
+
+.main .content {
+    width: 1000px;
+    margin: 2rem auto;
+}
+
+.list-headers {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.list-headers > div {
+    width: 150px;
+    display: inline-block;
+}
+
+.list-headers > div:first-child {
+    width: 330px;
+}
+
+.list-headers > div:last-child {
+    text-align: right;
+}
+
+.song-list .song {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.song > span {
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    height: 1rem;
+}
+.song > span:first-child {
+    width: 330px;
+}
+
+.song .song-duration {
+    text-align: right;
+}
+
+.song-list .song:hover {
+    background-color: #282828;
+}
+
+
+.song-length {
+    text-align: right;
+}
+.list-headers{
+    color:orange;
+    font-size:30px;
+}
+/*css for class 7*/
+
+.content {
+    position: relative;
+}
+.current-song-wrapper {
+    position: absolute;
+    bottom: 0.5px;
+    /*top:70px;*/
+    display: flex;
+}
+.current-song-image {
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+ 
+
+}
+#dance{
+    height:1000px;
+}
+.current-song-name {
+    font-size: 1.4rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.current-song-album {
+    margin-top: 0.4rem;
+}
+              
+.music{
+    background:pink!important;
+    padding:10px 20px 10px 20px;
+    font-size:20px;
+
+ 
+}
+.media{
+    display:inline;
+    padding:0px 10px 0px 10px;
+}
+.image{
+    border-radius:50%;
+    border:10px solid black;
+}
+#home{
+    background:url("https://media1.giphy.com/media/g2B1SS9qma7wk/200w.webp#22-grid2.gif");
+}
+#mode{
+    background:url("https://media4.giphy.com/media/B6VZpgaSYzqda/200w.webp#3-grid2.gif");
+  
+}
+#links1{
+background:url("https://media4.giphy.com/media/B6VZpgaSYzqda/200w.webp#3-grid2.gif");
+}
+#links2{
+background:url("https://media2.giphy.com/media/Ym8lp0Vp0Hyfe/200.webp#5-grid2.gif");
+}
+#links3{
+background:url("https://media2.giphy.com/media/WDmHARhVo70l2/200w.webp#8-grid2.gif");
+}
+#links4{
+background:url("https://media1.giphy.com/media/g2B1SS9qma7wk/200w.webp#22-grid2.gif");
+}
+            /*DataTables overrides*/
+
+table.dataTable tbody tr {
+    background-color: initial;
+}
+#songs_info {
+    display: none;
+}
+
+#songs_filter {
+    color: transparent;
+}
+#songs_filter input {
+    width: 400px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+/*              
+.music{
+    background:pink!important;
+    padding:10px 20px 10px 20px;
+    font-size:20px;
+
+ 
+}
+.media{
+    display:inline;
+    padding:0px 10px 0px 10px;
+}
+.image{
+    border-radius:50%;
+    border:10px solid black;
+}*/

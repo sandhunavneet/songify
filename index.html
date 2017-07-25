@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Song App</title>
+   <link rel="stylesheet" type="text/css" href="font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+    <!-- wrapper class jisme warp hoga sabb -->
+<div class="wrapper">
+
+<section class="welcome-screen ">
+<img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYjRe3UyjAhnEYCZjx8yOaCJUoULZWRMga0fl8S55vB98QPo6Vnw">
+<h1> Welcome to Songify </h1>
+<h3> Enter name to access your account </h3>
+<div class="input-wrapper">
+<input type="text" placeholder="Name" id="name-input">
+<button class="button"> Go </button>
+</div>
+</section>
+
+        <!-- start of main section -->
+        <div class="main">
+           
+            <header>
+               
+                    <div class="right floated user-name"></div>
+                  <!-- links are added -->
+<marquee direction="right"
+                    <ul class="music">
+                    <a href="index.html"> <li class="media" id="home">HOME</a></li>
+                    <a href="link.html"> <li class="media" id="mode">MODE BASED</a></li>
+                    
+                    <li  class="media" id="links1"> CHILL SONGS</li>
+                    <li  class="media"id="links2"> DISCO SONGS</li>
+                    <li  class="media"id="links3"> PUNJABI SONGS</li>
+                    <li class="media" id="links4"> POP SONGS</li>  
+                                   
+                </ul></marquee>
+            </header>
+         
+               
+
+            <!-- section content -->
+            <section class="content">
+
+
+
+             <audio src="song.mp3"></audio>
+<!-- tables are added -->
+            <table id="songs">
+             <thead class="list-headers">
+            <tr>
+
+            <td> Title </td>
+            <td> Artist </td>
+            <td> Album </td>
+            <td> Duration </td>
+        </tr>
+        </thead>
+        <!-- <div class="song-list"> -->
+        <tbody>
+
+                <tr class="song" id="song1">
+                <td class="song-name"></td>
+                <td class="song-artist"></td>
+                <td class="song-album"></td>
+                <td class="song-length"></td>
+
+            </tr>
+
+            <tr class="song" id="song2">
+
+                <td class="song-name"></td>
+                <td class="song-artist"></td>
+                <td class="song-album"></td>
+                <td class="song-length"></td>
+
+            </tr>
+
+            <tr class="song" id="song3">
+
+                <td class="song-name"></td>
+                <td class="song-artist"></td>
+                <td class="song-album"></td>
+                <td class="song-length"></td>
+
+            </tr>
+
+            <tr class="song" id="song4">
+
+                <td class="song-name"></td>
+                <td class="song-artist"></td>
+                <td class="song-album"></td>
+                <td class="song-length"></td>
+
+            </tr>
+        <!-- </div> -->
+            </tbody>
+            </table>
+       
+                <!-- current song details  -->
+            <div class="current-song-wrapper">
+            <img class="current-song-image">
+                <div>
+                    <!-- song  name added -->
+                        <p class="current-song-name"></p>
+                        <p class="current-song-album"></p>
+                    </div>
+                </div>
+            
+                      </section>
+             
+ <!-- start of footer -->
+            <footer>
+                <div class="controls">
+                <div class="player-buttons">
+                <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
+                      
+                </div>
+   
+                  <!-- in this sonng duration is added -->
+
+                    <div class="progress-wrapper">
+                        <span class="time-elapsed"> </span>
+                        <div class="player-progress">
+                        <div class="progress-filled"> </div>
+                        </div>
+
+                        <span class="song-duration"></span>
+                    </div>
+                    </div>
+                    </footer>
+            <!-- end of footer -->
+
+                    </div>
+        <!-- end of main class -->
+                     </div>
+    
+   
+    <!-- End of warpper -->
+
+
+    <!-- javascript file attached -->
+     <script src="jquery.js">
+    </script>
+    <!-- datatabes file attached -->
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
+    </script>
+    <!-- main.js file atteched -->
+    <script src="main.js"></script>
+    <!-- mood.js file atteched -->
+<script src="mood.js"></script>
+
+
+</body>
+</html>
